@@ -44,27 +44,31 @@ body{
 
 .block
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 50px;
     background-color: rgb(133, 197, 235);
     border: 5px dashed rgb(189, 111, 189);
     text-align: center;
-    padding: 40px;
+    
 }
-
+.top_bot{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .block_ss
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 15px;
     margin-right: 15px;
-    margin-top: 50px;
     margin-bottom: 50px;
     background-color: rgb(133, 197, 235);
     border: 5px dashed rgb(189, 111, 189);
     text-align: center;
-    padding: 40px;
+    
 }
 h1{
     color:rgb(189, 111, 189);
@@ -128,7 +132,8 @@ tr:nth-child(even)
     text-decoration: none; /*убираем подчеркивание текста ссылок*/
     background:#d078e686; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
     color:#fff; /*меняем цвет ссылок*/
-    
+    margin-left: 15px;
+    margin-right: 15px;
     font-family: arial; /*меняем шрифт*/
     line-height:50px; /*ровняем меню по вертикали*/
     display: block; 
@@ -141,7 +146,6 @@ tr:nth-child(even)
 
 .menu li {
     width: 100%;
-    float:left;
   }
 
 
@@ -157,7 +161,7 @@ tr:nth-child(even)
     text-align: center;
     color: rgba(71, 26, 107, 0.63); /* Цвет текста */
 }
-
+/*
 @media screen and (min-width: 426px) {
     .block_ss{
         width: 960px;
@@ -192,3 +196,4 @@ tr:nth-child(even)
         margin-bottom: 50px;
     }
   }
+*/
