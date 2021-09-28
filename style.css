@@ -70,37 +70,28 @@ body{
     text-align: center;
     
 }
+
 h1{
     color:rgb(189, 111, 189);
 }
 
-ul{
-    list-style: none;
-    text-align:left;
-}
-ol{
-    display:inline-table;
-}
-li{
-    margin-bottom: 4px;
-    text-align:left;
-}
 table{  
     text-align: center;
     border-spacing: 5px; /* Расстояние между ячейками */
     border:5px;
     margin: auto;
 }
-td{
+
+.table td{
     width:200px;
     height:50px;
 }
-tr:nth-child(odd)
+.table tr:nth-child(odd)
 {
     background:rgb(212, 245, 209);;
     padding: 5px; /* Поля вокруг текста */
 }
-tr:nth-child(even)
+.table tr:nth-child(even)
 {
     background:rgb(213, 203, 221);
     padding: 5px; /* Поля вокруг текста */
@@ -112,7 +103,16 @@ tr:nth-child(even)
     background: rgb(235, 208, 235);
     text-decoration: none;
 }
-
+.ss li{
+    margin-bottom: 4px;
+    text-align:left;
+}
+ul{
+    list-style: none;
+}
+.ss ol{
+    display:inline-table;
+}
 .menu{
     display: flex;
     flex-direction: column;
@@ -121,11 +121,8 @@ tr:nth-child(even)
     
 }
 .menu ul {
-    list-style: none; /*убираем маркеры списка*/
-    margin: 0; /*убираем отступы*/
-    padding-left: 0; /*убираем отступы*/
     background:#d078e686; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
-    height: 50px; /*задаем высоту*/
+    height: 100px; /*задаем высоту*/
   }
 .menu a {
     text-align: center;
@@ -137,7 +134,7 @@ tr:nth-child(even)
     font-family: arial; /*меняем шрифт*/
     line-height:50px; /*ровняем меню по вертикали*/
     display: block; 
-    border: 1px solid #62caf398; /*добавляем бордюр справа*/
+    border: 1px solid #62caf398; /*добавляем бордюр*/
   }
 
 .menu a:hover {
@@ -161,14 +158,9 @@ tr:nth-child(even)
     text-align: center;
     color: rgba(71, 26, 107, 0.63); /* Цвет текста */
 }
-/*
+
 @media screen and (min-width: 426px) {
     .block_ss{
-        width: 960px;
-        margin: 0 auto;
-        margin-bottom: 50px;
-    }
-    .block_menu{
         width: 960px;
         margin: 0 auto;
         margin-bottom: 50px;
@@ -182,12 +174,11 @@ tr:nth-child(even)
         width: 960px;
     }
     .menu{
-        margin: 0 auto;
         width: 960px;
+        margin: 0 auto;
         flex-direction: row;
     }
     .menu li{
-        flex-direction: row;
         margin: 10px;
     }
     .ss{
@@ -196,4 +187,3 @@ tr:nth-child(even)
         margin-bottom: 50px;
     }
   }
-*/
